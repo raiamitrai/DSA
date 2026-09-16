@@ -22,13 +22,13 @@ public class Student {
         }
         else{
             Node temp = head;
-        while(temp.next != null){
-            temp = temp.next;
-        }
-        if(temp.next == null){
-            temp.next = newNode;
-            newNode.next = null;
-        }
+            while(temp.next != null){
+                temp = temp.next;
+            }
+
+                temp.next = newNode;
+                newNode.next = null;
+
         }
 
     }
@@ -37,9 +37,10 @@ public class Student {
 
         if(pos == 1){
             insertAtBegin(data);
+            return;
         }
         Node temp = head;
-        for(int i = 1 ; i < pos ; i++ ){
+        for(int i = 1 ; i < pos -1 ; i++ ){
             temp = temp.next;
         }
         Node newNode = new Node(data);
@@ -53,6 +54,7 @@ public class Student {
             System.out.println(temp.data + " -> ");
             temp = temp.next;
         }
+         System.out.println("null");
     }
 
 }
