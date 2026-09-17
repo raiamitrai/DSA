@@ -80,26 +80,23 @@ public class DoublyLinkedList {
     }
 
     public void displayForward() {
-
         Node temp = head;
-
         while(temp != null) {
             System.out.print(temp.data + " ⇄ ");
             temp = temp.next;
         }
-
         System.out.println("null");
     }
 
     public void displayBackward() {
-
         Node temp = tail;
-
         while(temp != null) {
             System.out.print(temp.data + " ⇄ ");
             temp = temp.prev;
         }
-
         System.out.println("null");
     }
+
+
+
 }
